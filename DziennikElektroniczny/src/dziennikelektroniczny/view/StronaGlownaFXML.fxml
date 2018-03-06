@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.StronaGlownaFXMLController">
+   <children>
+      <Label layoutX="101.0" layoutY="47.0" text="Dziennik elektroniczny">
+         <font>
+            <Font name="Arimo" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="208.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dziennik.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="399.0" layoutY="347.0" text="Copyright © 2017 - Jakub Kuśnierz">
+         <font>
+            <Font name="Arimo Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

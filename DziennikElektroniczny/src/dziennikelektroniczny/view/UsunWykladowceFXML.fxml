@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.UsunWykladowceFXMLController">
+   <children>
+      <Label layoutX="171.0" layoutY="33.0" text="Usuwanie wykładowcy">
+         <font>
+            <Font name="Arimo Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="230.0" mnemonicParsing="false" onAction="#usunWykladowceAction" text="Usun wykładowce">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="95.0" layoutY="109.0" text="Wybierz wykładowcę:" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/wykladowca.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cBoxWyborWykladowcy" layoutX="77.0" layoutY="136.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

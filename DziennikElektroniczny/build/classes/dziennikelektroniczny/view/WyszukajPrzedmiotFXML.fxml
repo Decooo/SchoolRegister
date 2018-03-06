@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="600.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.WyszukajPrzedmiotFXMLController">
+   <children>
+      <Label layoutX="151.0" layoutY="20.0" text="Wyszukiwanie przedmiotu">
+         <font>
+            <Font name="Arimo Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="75.0" text="Nazwa przedmiotu:">
+         <font>
+            <Font name="Arimo" size="12.0" />
+         </font></Label>
+      <Label layoutX="257.0" layoutY="74.0" text="Typ przedmiotu:" />
+      <TextField fx:id="textFieldNazwa" layoutX="38.0" layoutY="96.0" />
+      <TextField fx:id="textFieldTypPrzedmiotu" layoutX="226.0" layoutY="96.0" />
+      <Button layoutX="39.0" layoutY="150.0" mnemonicParsing="false" onAction="#pokazPrzedmiotAction" text="Znajdź przedmiot">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="233.0" layoutY="150.0" mnemonicParsing="false" onAction="#pokazWszystkiePrzedmiotyAction" text="Pokaż wszystkie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewPrzedmioty" layoutY="219.0" prefHeight="153.0" prefWidth="600.0" style="-fx-background-color: lightyellow;">
+        <columns>
+          <TableColumn fx:id="tColumnId" prefWidth="136.0" text="lp." />
+          <TableColumn fx:id="tColumnNazwa" prefWidth="240.0" text="Nazwa przedmiotu" />
+            <TableColumn fx:id="tColumnTypPrzedmiotu" prefWidth="220.0" text="Typ przedmiotu" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="143.0" fitWidth="168.0" layoutX="422.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pzedmioty.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

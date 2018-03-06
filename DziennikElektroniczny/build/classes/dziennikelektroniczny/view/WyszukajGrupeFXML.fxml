@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="601.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.WyszukajGrupeFXMLController">
+   <children>
+      <Label layoutX="107.0" layoutY="14.0" text="Wyszukiwanie grupy">
+         <font>
+            <Font name="Arimo Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cBoxWyborGrupy" layoutX="135.0" layoutY="92.0" prefWidth="150.0" />
+      <Label layoutX="169.0" layoutY="62.0" text="Wybierz grupe:" />
+      <Button layoutX="102.0" layoutY="128.0" mnemonicParsing="false" onAction="#znajdzGrupeAction" text="Znajdź studentów grupy">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableViewGrupa" layoutX="1.0" layoutY="186.0" prefHeight="187.0" prefWidth="600.0" style="-fx-background-color: lightyellow;">
+        <columns>
+            <TableColumn fx:id="tColumnLP" prefWidth="66.0" text="lp." />
+          <TableColumn fx:id="tColumnNrAlbumu" prefWidth="119.0" text="nr albumu" />
+          <TableColumn fx:id="tColumnImie" prefWidth="131.0" text="imie" />
+            <TableColumn fx:id="tColumnNazwisko" prefWidth="154.0" text="nazwisko" />
+            <TableColumn fx:id="tColumnPesel" minWidth="0.0" prefWidth="129.0" text="pesel" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="424.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/grupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

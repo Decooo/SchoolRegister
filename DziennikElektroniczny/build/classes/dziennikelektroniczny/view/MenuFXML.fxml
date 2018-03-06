@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.MenuFXMLController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Studenci">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dodajStudentaAction" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#usunStudentaAction" text="Usuń" />
+                  <MenuItem mnemonicParsing="false" onAction="#zaaktualizujDaneStudentaAction" text="Zaaktualizuj dane" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Wykładowcy">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dodajWykladowceAction" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#usunWykladowceAction" text="Usuń" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Przedmioty">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dodajPrzedmiotAction" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#usunPrzedmiotAction" text="Usuń" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Oceny">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#dodajOceneAction" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#usunOceneAction" text="Usuń" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Grupy">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#przydzielPrzedmiotAction" text="Przydziel przedmiot do grupy" />
+                  <MenuItem mnemonicParsing="false" onAction="#usuwaniePrzedmiotuAction" text="Usun przedmiot z grupy" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Wyszukaj">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#wyszukajStudentaAction" text="Studenta" />
+                  <MenuItem mnemonicParsing="false" onAction="#znajdzGrupeAction" text="Grupe" />
+                  <MenuItem mnemonicParsing="false" onAction="#wyszukajPrzedmiotyGrupyAction" text="Przedmioty grupy" visible="true" />
+                  <MenuItem mnemonicParsing="false" onAction="#wyszukajOcenyAction" text="Oceny studenta" />
+                  <MenuItem mnemonicParsing="false" onAction="#wyszukajWykladowceAction" text="Wykladowce" />
+                  <MenuItem mnemonicParsing="false" onAction="#wyszukajPrzedmiotAction" text="Przedmiot" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

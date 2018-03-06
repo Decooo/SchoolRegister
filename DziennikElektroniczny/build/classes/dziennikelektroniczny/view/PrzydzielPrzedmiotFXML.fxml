@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.PrzydzielPrzedmiotFXMLController">
+   <children>
+      <Label layoutX="163.0" layoutY="14.0" text="Przydzielanie przedmiotu">
+         <font>
+            <Font name="Arimo Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cBoxWyborGrupy" layoutX="63.0" layoutY="108.0" prefWidth="150.0" />
+      <ComboBox fx:id="cBoxWyborPrzedmiotu" layoutX="65.0" layoutY="200.0" prefWidth="150.0" />
+      <ComboBox fx:id="cBoxWyborWykladowcy" layoutX="66.0" layoutY="303.0" prefWidth="150.0" />
+      <Label layoutX="100.0" layoutY="83.0" text="Wybierz grupe:" />
+      <Label layoutX="87.0" layoutY="177.0" text="Wybierz przedmiot:" />
+      <Label layoutX="85.0" layoutY="275.0" text="Wybierz wykladowce" />
+      <Button layoutX="343.0" layoutY="283.0" mnemonicParsing="false" onAction="#przydzielPrzedmiotAction" text="Dodaj przedmiot">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="347.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/przedmiotgrupy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ADEAEA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dziennikelektroniczny.controller.DodajStudentaFXMLController">
+   <children>
+      <TextField fx:id="textFieldImie" layoutX="51.0" layoutY="90.0" promptText="imie" />
+      <TextField fx:id="textFieldNazwisko" layoutX="51.0" layoutY="163.0" promptText="nazwisko" />
+      <TextField fx:id="textFieldPesel" layoutX="52.0" layoutY="228.0" promptText="pesel" />
+      <Button layoutX="343.0" layoutY="285.0" mnemonicParsing="false" onAction="#dodajStudentaAction" text="Dodaj studenta">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ComboBox fx:id="cBoxWyborGrupy" layoutX="52.0" layoutY="304.0" prefWidth="150.0" />
+      <Label layoutX="172.0" layoutY="14.0" text="Dodawanie studenta">
+         <font>
+            <Font name="Arimo" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="68.0" text="Imie studenta:">
+         <font>
+            <Font name="Arimo" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="139.0" text="Nazwisko studenta:">
+         <font>
+            <Font name="Arimo" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="208.0" text="Pesel:">
+         <font>
+            <Font name="Arimo" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="278.0" text="Grupa:" />
+      <ImageView fitHeight="145.0" fitWidth="156.0" layoutX="343.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/student1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
